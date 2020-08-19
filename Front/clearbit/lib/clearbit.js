@@ -1,4 +1,4 @@
-const authorization = "Bearer sk_4b8953b344634dc53901ce19a0aa417c";
+const authorization = "Bearer sk_YOUR_KEY_HERE";
 const form = document.getElementById("clearbitForm");
 const user_tag = document.getElementById("userName");
 const email_tag = document.getElementById("userEmail");
