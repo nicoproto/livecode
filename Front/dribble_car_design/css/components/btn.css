@@ -1,0 +1,21 @@
+.save-btn {
+  background: #9595ae;
+  padding: 5px;
+  border-radius: 9px;
+  color: white;
+  position: absolute;
+  top: 6%;
+  left: 4%;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+
+.card-image:hover .save-btn {
+  opacity: 1;
+  background: #8787b4;
+}
+
+.card-image:hover {
+  transform: rotate(2deg);
+}

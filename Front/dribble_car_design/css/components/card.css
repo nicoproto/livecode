@@ -1,0 +1,46 @@
+.card-image {
+  background-image: url("https://cdn.dribbble.com/users/563897/screenshots/9052771/media/bafe536493e522d303491aa609f6ebd7.png");
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.card-container {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.card-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+  .card-info img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+.card-social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.card-social-icons svg:not(:last-child) {
+  margin-right: 5px;
+}
+
+
+
+
+

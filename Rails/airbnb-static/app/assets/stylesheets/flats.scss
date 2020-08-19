@@ -1,0 +1,22 @@
+// Place all the styles related to the Flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  list-style-type: none;
+  margin-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 25%;
+}

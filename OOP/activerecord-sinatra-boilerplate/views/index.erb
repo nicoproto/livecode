@@ -1,0 +1,21 @@
+<h1>My Simpsons App</h1>
+<p>The list of my favorite Simpsons</p>
+
+<ul>
+  <% @simpsons.each do |simpson| %>
+    <li>
+      <a href="simpsons/<%= simpson.id %>"><%= simpson.name %></a> - "<%= simpson.quote %>"
+
+    </li>
+
+  <% end %>
+</ul>
+
+<h2>Create a simpson!</h2>
+<form action="/simpsons" method="post">
+  <label for="name">Name</label>
+  <input type="text" name="name">
+  <label for="quote">quote</label>
+  <input type="text" name="quote">
+  <input type="submit" value="create me!">
+</form>
