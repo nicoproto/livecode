@@ -1,8 +1,7 @@
-// TODO: Build an awesome garage!
-import { addCar, fetchCars } from './car';
+import { addCar, fetchAndDisplayCars } from './car';
 import { focusOnFirstInput, prepareNewCarForm } from './form';
 
-const garageName = "codingkatz";
+const GARAGE_SLUG = "your-garage-here";
 
-fetchCars(garageName);
-prepareNewCarForm(garageName);
+fetchAndDisplayCars(GARAGE_SLUG);
+prepareNewCarForm(GARAGE_SLUG);

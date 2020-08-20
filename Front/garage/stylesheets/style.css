@@ -24,7 +24,6 @@ body {
 }
 .garage-logo img {
   width: 100%;
-  border-radius: 50%;
 }
 .garage-info {
   margin-top: 60px;
@@ -48,7 +47,7 @@ body {
 }
 .cars-list {
   width: 75%;
-  background-color: #f4f19a;
+  background-color: lightgray;
   padding: 20px;
   overflow: scroll;
 }
@@ -57,8 +56,6 @@ body {
   background-color: white;
   margin-bottom: 10px;
   opacity: 0.9;
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px #0000005e;
 }
 .car:hover {
   opacity: 1;
@@ -68,7 +65,6 @@ body {
 }
 .car-image img {
   width: 100%;
-  border-radius: 5px 0 0 5px;
 }
 .car-info {
   padding: 10px;
