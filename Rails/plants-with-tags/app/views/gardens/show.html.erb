@@ -1,0 +1,49 @@
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= @garden.banner_url %>);">
+  <div class="container text-center">
+    <h1><%= @garden.name %></h1>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col">
+      <div class="cards">
+        <% @garden.plants.each do |plant| %>
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= plant.image_url %>)">
+            <div class="card-tags">
+              <% plant.tags.each do |tag| %>
+                <span><%= tag.name %></span>
+              <% end %>
+              <%= link_to "+", new_plant_plant_tag_path(plant) %>
+            </div>
+            <%= plant.name %>
+            <%= link_to plant_path(plant), method: :delete, data: { confirm: 'Are you sure?' }, class: 'card-remove-link' do %>
+              <i class="fas fa-trash"></i>
+            <% end %>
+          </div>
+
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- form -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+      <h4>Add a plant:</h4>
+      <% # Added the 'd-none' class so it's hidden by default and it appears when with click on the toggle button %>
+      <%= simple_form_for [ @garden, @plant ], html: { class: "d-none"} do |f| %>
+        <%= f.input :name, placeholder: "Palm tree" %>
+        <%= f.input :image_url, placeholder: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/philo.jpg" %>
+        <%= f.submit "Add", class: "btn btn-primary" %>
+      <% end %>
+      <button class="btn btn-secondary toggle-form mt-3">Toggle form</button>
+    </div>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_garden_path(@garden) %> |
+<%= link_to 'Back', gardens_path %>
