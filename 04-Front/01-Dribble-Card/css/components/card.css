@@ -1,0 +1,65 @@
+.card-white {
+  background-color: white;
+  border: 1px solid rgb(240, 240, 240);
+  width: 250px;
+  border-radius: 4px;
+}
+
+.card-white-image {
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.card-white .list-inline {
+  color: #B0B0B0;
+  text-align: right;
+  padding: 8px;
+}
+
+.card-white .list-inline li {
+  margin-left: 8px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.card-white .list-inline li:hover {
+  color: black;
+}
+
+/* Bevahior of a btn inside of a card (doesn't need to be in `button.css` */
+.card-white .btn {
+  opacity: 0;
+  transition: .3s;
+}
+
+.card-white:hover .btn {
+  opacity: 1;
+}
+
+.card-user {
+  margin-top: 8px;
+  /* intro to flexbox! */
+  display: flex;
+  align-items: center;
+
+}
+
+.card-user a {
+  color: #4B94BD;
+}
+
+.card-user a:hover {
+  color: #3F7EA3;
+}
+
+.card-user .avatar {
+  margin-right: 8px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
